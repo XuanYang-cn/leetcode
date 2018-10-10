@@ -26,7 +26,7 @@ Analysis : Find the **first** number that's **equal to or greater than** the **t
 
 核心方法：二分查找（折半查找）
 
-问题解析：在数组中找到第一个**大于等于**给定值的数，并返回该数的下标
+问题解析：在数组中找到第一个**大于等于**给定值的数，并返回该数的下标
 
 
 ## Code
