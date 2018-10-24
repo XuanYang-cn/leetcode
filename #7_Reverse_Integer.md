@@ -23,7 +23,7 @@ Basic Idea:
 
 result = result*10 + x%10
 
-## Code
+## Python Code
 ```python
 class Solution:
     def reverse(self, x):
@@ -51,4 +51,40 @@ class Solution:
                 return 0
         #return the signed result
         return result*flag
+```
+## Java Code
+```java
+class Solution{
+    public int reverse(int x) {
+        // Use long to store x, because if x is -2147483648, then -x is 2147483648
+        // which is larger than the max value of Integer
+        long temp = x;
+        int flag = 0;
+        // if x is negative, change x to positive and let flag = -1
+        if(temp < 0){
+            flag = -1;
+            temp = (-1) * temp;
+        } else if(temp > 0){
+            flag = 1;
+        }
+        // if x == 0, return x
+        else{
+            return 0;
+        }
+        // Note that result is always positive
+        long result = 0;
+        while(temp != 0){
+            result = result * 10 + temp % 10;
+            temp = temp / 10;
+            // when x is positive, check if result is greater than 2^31-1(Overflow)
+            // when x is negative, check if result is greater than 2^31, which means (-result) is less than -2^31(Overflow)
+            // if Overflow, return 0
+            if((flag == 1 && result > Integer.MAX_VALUE - 1) || (flag == -1 && result > Integer.MAX_VALUE)){
+                return 0;
+            }
+        }
+        // return the signed result
+        return (int)result * flag;
+    }
+}
 ```
