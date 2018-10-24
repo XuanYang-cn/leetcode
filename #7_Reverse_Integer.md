@@ -40,7 +40,7 @@ class Solution:
         else:
             return 0 #if x==0, return x
         result = 0 #Note that result is always positive
-        Max = 2**3
+        Max = 2**31
         while x != 0:
             result = result*10 + x%10
             x = x//10 
