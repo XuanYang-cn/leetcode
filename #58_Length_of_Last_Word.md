@@ -18,7 +18,7 @@ Key Method: Counting from back
 
 Time complexity : less than $O(N)$, depends on length of last word. The worst time complexity is $O(N)$, which means the entire string is a word
 
-## Code
+## Python Code
 
 ```python
 class Solution:
@@ -37,4 +37,31 @@ class Solution:
             else:
                 num = num + 1 #Count the length
         return num
+```
+
+## Java Code
+
+```java
+class Solution {
+    public int lengthOfLastWord(String s) {
+        // Length of last word
+        int count = 0;
+        // Find from the rear of the string
+        for(int i = s.length() - 1; i >= 0; i--){
+            // If there is not a space then record the length
+            if(s.charAt(i) != ' '){
+                for(int j = i; j >= 0; j--){
+                    // Record the length of word
+                    if(s.charAt(j) != ' ')
+                        count++;
+                    else
+                        break;
+                }
+            }
+            if(count != 0)
+                return count;
+        }
+        return count;
+    }
+}
 ```
