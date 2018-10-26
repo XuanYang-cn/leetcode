@@ -31,7 +31,7 @@ Time Complexity: $O(logN)$
 问题解析：在数组中找到第一个**大于等于**给定值的数，并返回该数的下标
 
 
-## Code
+## Python Code
 
 ```python
 class Solution:
@@ -53,6 +53,30 @@ class Solution:
             else:
                 return mid
     return left
+```
+
+## Java Code
+```java
+class Solution {
+    public int searchInsert(int[] nums, int target) {
+        int low = 0;
+        int high = nums.length - 1;
+        int mid = 0;
+        while(low <= high){
+            mid = (low + high) / 2;
+            if(nums[mid] == target){
+                return mid;
+            }
+            else if(nums[mid] > target){
+                high = mid - 1;
+            }
+            else if(nums[mid] < target){
+                low = mid + 1;
+            }
+        }
+        return low;
+    }
+}
 ```
 
 ## Further Reading
