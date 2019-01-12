@@ -24,6 +24,11 @@ And some further studying suggestions
 		<td colspan='20' width = "100%"><a href="https://github.com/Tustune/leetcode_answers_in_Python-Java/blob/master/%239_Palindrome_Number.md">Palindrome Number</font></td>
 		<td align="center">Easy</td>
     </tr>
+		 <tr>
+    	<td align="center">11</td>
+		<td colspan='20' width = "100%"><a href="https://github.com/Tustune/leetcode_answers_in_Python-Java/blob/master/%231-%23100/%2311.%20Container%20With%20Most%20Water.md">Container With Most Water</font></td>
+		<td align="center">Medium</td>
+    </tr>
     <tr>
     	<td align="center">20</td>
 		<td colspan='20' width = "100%"><a href="https://github.com/Tustune/leetcode_answers_in_Python-Java/blob/master/%2320_Valid_Parentheses.md">Valid Parentheses</font></td>
@@ -102,6 +107,11 @@ And some further studying suggestions
     <tr>
     	<td align="center">167</td>
 		<td colspan='20' width = "100%"><a href="https://github.com/Tustune/leetcode_answers_in_Python-Java/blob/master/%23167_Two_Sum_II%20-%20Input%20array%20is%20sorted.md">Two Sum II</font></td>
+		<td align="center">Easy</td>
+    </tr>
+		<tr>
+    	<td align="center">169</td>
+		<td colspan='20' width = "100%"><a href="https://github.com/Tustune/leetcode_answers_in_Python-Java/blob/master/%23101-%23200/%23169.%20Majority%20Element.md">Majority Element</font></td>
 		<td align="center">Easy</td>
     </tr>
 <table>
