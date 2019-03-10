@@ -16,40 +16,27 @@ Merge two sorted linked lists and return it as a new list. The new list should b
 
 ```python
 class Solution:
-    def mergeTwoLists(self, l1, l2):
-        """
-        :type l1: ListNode
-        :type l2: ListNode
-        :rtype: ListNode
-        """
-        if l1 is None:
-            return l2
-        elif l2 is None:
-            return l1
-        if l1.val <= l2.val:
-            small = l1
-            pointerl1 = l1
-            pointerl2 = l2
-        else:
-            small = l2
-            pointerl1 = l2
-            pointerl2 = l1
+    def mergeTwoLists(self, l1: ListNode, l2: ListNode) -> ListNode:
+        head = ListNode(2524)  # Building a Header makes code more readable
+        pointer = head
 
-        while pointerl1 is not None:
-            if pointerl2 is None:
-                return small
-            if pointerl1.next is None:
-                pointerl1.next = pointerl2
-                return small
-            # insert
-            elif pointerl2.val >= pointerl1.val and pointerl2.val <= pointerl1.next.val:
-                temp = pointerl2
-                pointerl2 = pointerl2.next
-                temp.next = pointerl1.next
-                pointerl1.next = temp
-                pointerl1 = pointerl1.next
-            elif pointerl2.val > pointerl1.next.val:
-                pointerl1 = pointerl1.next
+        while l1 and l2:
+            if l1.val <= l2.val:
+
+                pointer.next = l1
+                l1 = l1.next
+                pointer = pointer.next
+            else:
+                pointer.next = l2
+                l2 = l2.next
+                pointer = pointer.next
+        if l1:
+            pointer.next = l1
+
+        if l2:
+            pointer.next = l2
+
+        return head.next
 
 ```
 
