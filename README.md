@@ -65,6 +65,11 @@ And some further studying suggestions
 		<td align="center">Easy</td>
     </tr>
     <tr>
+    	<td align="center">61</td>
+		<td colspan='20' width = "100%"><a href="https://github.com/Tustune/leetcode-Python-Java/blob/master/%231-%23100/%2361.%20Rotate%20List.md">Rotate List</font></td>
+		<td align="center">Medium</td>
+    </tr>
+    <tr>
     	<td align="center">83</td>
 		<td colspan='20' width = "100%"><a href="https://github.com/Tustune/leetcode_answers_in_Python-Java/blob/master/%2383_Remove_Duplicates_from_Sorted_List.md">Remove Duplicates from Sorted List</font></td>
 		<td align="center">Easy</td>
