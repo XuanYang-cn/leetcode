@@ -29,6 +29,11 @@ And some further studying suggestions
 		<td colspan='20' width = "100%"><a href="https://github.com/Tustune/leetcode_answers_in_Python-Java/blob/master/%231-%23100/%2311.%20Container%20With%20Most%20Water.md">Container With Most Water</font></td>
 		<td align="center">Medium</td>
     </tr>
+		 <tr>
+    	<td align="center">19</td>
+		<td colspan='20' width = "100%"><a href="https://github.com/Tustune/leetcode-Python-Java/blob/master/%231-%23100/%2319.%20Remove%20Nth%20Node%20From%20End%20of%20List.md">Remove Nth Node From End of List</font></td>
+		<td align="center">Medium</td>
+    </tr>
     <tr>
     	<td align="center">20</td>
 		<td colspan='20' width = "100%"><a href="https://github.com/Tustune/leetcode_answers_in_Python-Java/blob/master/%2320_Valid_Parentheses.md">Valid Parentheses</font></td>
