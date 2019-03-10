@@ -120,6 +120,11 @@ And some further studying suggestions
 		<td align="center">Easy</td>
     </tr>
     <tr>
+    	<td align="center">142</td>
+		<td colspan='20' width = "100%"><a href="https://github.com/Tustune/leetcode-Python-Java/blob/master/%23101-%23200/%23142.%20Linked%20List%20Cycle%20II.md">Linked List Cycle II</font></td>
+		<td align="center">Medium</td>
+    </tr>
+    <tr>
     	<td align="center">167</td>
 		<td colspan='20' width = "100%"><a href="https://github.com/Tustune/leetcode_answers_in_Python-Java/blob/master/%23167_Two_Sum_II%20-%20Input%20array%20is%20sorted.md">Two Sum II</font></td>
 		<td align="center">Easy</td>
