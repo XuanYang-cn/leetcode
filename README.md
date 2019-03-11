@@ -134,19 +134,4 @@ And some further studying suggestions
 		<td colspan='20' width = "100%"><a href="https://github.com/Tustune/leetcode_answers_in_Python-Java/blob/master/%23101-%23200/%23169.%20Majority%20Element.md">Majority Element</font></td>
 		<td align="center">Easy</td>
     </tr>
-		<tr>
-    	<td align="center">189</td>
-		<td colspan='20' width = "100%"><a href="https://github.com/Tustune/leetcode_answers_in_Python-Java/blob/master/%23101-%23200/%23189.%20Rotate%20Array.md">Rotate Array</font></td>
-		<td align="center">Easy</td>
-    </tr>
-		<tr>
-    	<td align="center">217</td>
-		<td colspan='20' width = "100%"><a href="https://github.com/Tustune/leetcode_answers_in_Python-Java/blob/master/%23201-%23300/%23217.%20Contains%20Duplicate.md">Contains Duplicate</font></td>
-		<td align="center">Easy</td>
-    </tr>
-		<tr>
-    	<td align="center">219</td>
-		<td colspan='20' width = "100%"><a href="https://github.com/Tustune/leetcode_answers_in_Python-Java/blob/master/%23201-%23300/%23219.%20Contains%20Duplicate%20II.md">Contains Duplicate II</font></td>
-		<td align="center">Easy</td>
-    </tr>
 <table>
