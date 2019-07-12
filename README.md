@@ -5,4 +5,4 @@ And some further studying suggestions
 
 |\#|Method|Code|Difficulty|
 |:--:|:-----|:-----|:----------:|
-|1|[Two Sum](/1_100/1_tow_sum.md)|[python](/1_100/1.py)|Easy|
+|1|[Two Sum](/1_100/1_two_sum.md)|[python](/1_100/1.py)|Easy|
