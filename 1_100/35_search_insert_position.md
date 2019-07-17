@@ -1,0 +1,36 @@
+[#35 Search Insert Position]()
+## Method
+
+Key Method: Binary search
+
+Analysis : Find the **first** number that's **equal to or greater than** the **target** and return the index of the number.
+
+Time Complexity: $O(logN)$
+
+核心方法：二分查找（折半查找）
+
+问题解析：在数组中找到第一个**大于等于**给定值的数，并返回该数的下标
+
+
+## Python Code
+
+## Further Reading
+
+### Other kinds of Binary Search
+
+- There are **duplicates** in array
+
+1. Find the first equal to target
+2. Find the fist greater than or equal to target
+3. Find the fist greater than target
+4. Find the last equal to target
+5. Find the last lesser than or equal to target
+6. Find the last lesser than target
+
+### 二分查找的变种
+
+- 有**重复**数据
+
+找第一个与key相等的值，找第一个大于等于key的值，找第一个大于key的值
+
+找最后一个与key相等的值，找最后一个小于等于key的值，找最后一个小于key的值
