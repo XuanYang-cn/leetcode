@@ -5,3 +5,4 @@
 - [] -p1- review and correct old code
 - [] -p2- remove java codes
 - [] -p2- Multi-langurage support: CN-ZH, EN
+- [] -p3- add Space costs
