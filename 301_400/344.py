@@ -3,11 +3,11 @@
 
 import sys
 sys.path.append('.')
-from schema import time_it
+from schema import mem_time_resource
 
 
 class Solution:
-    @time_it
+    @mem_time_resource
     def tow_pointers(self, s: list) -> None:
         """
         Do not return anything, modify s in-place instead.
@@ -19,7 +19,7 @@ class Solution:
             left += 1
             right -= 1
 
-    @time_it
+    @mem_time_resource
     def build_in_reserve(self, s: list) -> None:
         s.reverse()
 
