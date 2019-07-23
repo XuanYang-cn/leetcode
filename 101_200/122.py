@@ -1,16 +1,6 @@
-from functools import wraps
-import time
-
-
-def time_it(func):
-    @wraps(func)
-    def inner(*args):
-        t0 = time.perf_counter_ns()
-        _result = func(*args)
-        elapsed = (time.perf_counter_ns() - t0)/1000
-        print(f'[{elapsed:0.4f}ms]{func.__name__} -> {_result}')
-        return _result
-    return inner
+import sys
+sys.path.append('.')
+from schema import time_it
 
 
 class Solution:
