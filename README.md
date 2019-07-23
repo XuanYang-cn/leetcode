@@ -79,6 +79,7 @@ example output:
 |\#|Method|Code|Difficulty|
 |:--|:-----|:-----:|:----------:|
 |1|[Two Sum 两数之和](/1_100/1_two_sum.md)|[python](/1_100/1.py)|Easy|
+|48|[Rotate image](/1_100/48.md)|[python](/1_100/48.py)|Medium|
 |122|[Best Time to Buy and Sell Stock II 买卖股票的最佳时期2](/101_200/122_best_time_to_buy_and_sell_stock.md)|[python](/101_200/122.py)|Easy|
 |344|[Reverse String 反转字符串]()|[python](/301_400/344.py)|Easy|
 
