@@ -9,7 +9,7 @@ def time_it(func):
         t0 = time.perf_counter_ns()
         _result = func(*args)
         elapsed = (time.perf_counter_ns() - t0)/1000
-        if _result:
+        if _result is not None:
             print(f'[{date}]: [{elapsed:0.4f}ms]{func.__name__} -> {_result}')
         else:
             print(f'[{date}]: [{elapsed:0.4f}ms]{func.__name__}')
