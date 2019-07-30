@@ -22,6 +22,15 @@ class Solution:
 
         return False
 
+    @time_it
+    def containsDuplicate3(self, nums) -> bool:
+        nums.sort()
+        for index in range(len(nums)-1):
+            if nums[index + 1] == nums[index]:
+                return True
+        return False
+
+
 
 nums1 = [1, 2, 3, 1]
 nums2 = [1, 2, 3, 4]
@@ -37,3 +46,6 @@ assert solu.containsDuplicate2(nums1)
 assert not solu.containsDuplicate2(nums2)
 assert solu.containsDuplicate2(nums3)
 
+assert solu.containsDuplicate3(nums1)
+assert not solu.containsDuplicate3(nums2)
+assert solu.containsDuplicate3(nums3)
