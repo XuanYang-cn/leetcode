@@ -13,25 +13,18 @@ class Solution:
     def lengthOfLongestSubstring(self, s: str) -> int:
         if len(s) <= 1:
             return len(s)
-
-        left = 0 
+        left = 0
         right = 1
         length = 1
         while right < len(s):
             if s[right] in s[left:right]:
+                index = s.find(s[right], left, right)
                 right += 1
-                left += 1 
+                left = index + 1
             else:
                 right += 1
-            length = max(length, right-left)
-
+                length = max(length, right-left)
         return length
-
-    def find(s: str, x: str) -> int:
-        try:
-            s.index[]
-
-
 
 solu = Solution()
 case1 = 'abcabcbb'
