@@ -1,0 +1,54 @@
+# 387 first unique character in a string 字符串中的第一个唯一字符
+
+__author__ = 'Yang Xuan (jumpthepig@gmail.com)'
+
+import sys
+import collections
+sys.path.append('.')
+from schema import time_it
+
+
+class Solution:
+    @time_it
+    def build_in_slice(self, s: str) -> int:
+        for i in range(len(s)):
+            if s[i] not in s[i+1:] and s[i] not in s[:i]:
+                return i
+        return -1
+
+    @time_it
+    def hash_it(self, s: str) -> int:
+        '''
+        Time: O(N) + O(N)
+        Space: O(N)
+        '''
+        # Self construct dictionary
+        #  counter = {}
+        #  for char in s:
+        #      counter[char] = counter.get(char, 0) + 1
+
+        # Or using collections --> Slower
+        counter = collections.Counter(s)
+
+        for index, char in enumerate(s):
+            if counter[char] == 1:
+                return index
+        return -1
+
+
+case0 = 'cc'
+case1 = 'leetcode'
+case2 = 'loveleetcode'
+solu = Solution()
+r0 = solu.build_in_slice(case0)
+r00 = solu.hash_it(case0)
+assert r0 == -1
+assert r00 == -1
+r1 = solu.build_in_slice(case1)
+r11 = solu.hash_it(case1)
+assert r1 == 0
+assert r11 == 0
+r2 = solu.build_in_slice(case2)
+r22 = solu.hash_it(case2)
+assert r2 == 2
+assert r22 == 2
