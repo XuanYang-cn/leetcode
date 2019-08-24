@@ -1,4 +1,4 @@
-'''14. Longest common prefix 最长公共前缀'''
+# 14 Longest common prefix 最长公共前缀
 
 __author__ = 'Yang Xuan (jumpthepig@gmail.com)'
 
@@ -9,8 +9,9 @@ from schema import time_it
 
 
 class Solution:
+    @classmethod
     @time_it
-    def longestCommonPrefix(self, strs: list) -> str:
+    def longestCommonPrefix(cls, strs: list) -> str:
         if len(strs) <= 0:
             return ""
         elif len(strs) == 1:
@@ -18,12 +19,13 @@ class Solution:
 
         common = strs[0]
         for i in range(1, len(strs)):
-            common = self.find_common_prefix(common, strs[i])
+            common = cls.find_common_prefix(common, strs[i])
             if common == "" or common is None:
                 return common
         return common
 
-    def find_common_prefix(self, s1, s2) -> str:
+    @classmethod
+    def find_common_prefix(cls, s1, s2) -> str:
         length = min(len(s1), len(s2))
         i = 0
         while i < length:
@@ -33,8 +35,9 @@ class Solution:
                 return s1[:i]
         return s1[:i]
 
+    @classmethod
     @time_it
-    def longestCommonPrefix1(self, strs: list) -> str:
+    def longestCommonPrefix1(cls, strs: list) -> str:
         '''solve short string problem
             Time:
                 worst:
@@ -55,11 +58,19 @@ class Solution:
                     return strs[0][:i]
         return strs[0]
 
-solu = Solution()
-strs = ["flower","flow","flight"]
+
+strs = ["flower", "flow", "flight"]
 strs1 = ['a', 'a']
 
-solu.longestCommonPrefix(strs)
-solu.longestCommonPrefix1(strs)
+Solution.longestCommonPrefix(strs)
+Solution.longestCommonPrefix1(strs)
+Solution.longestCommonPrefix1(strs1)
 
-solu.longestCommonPrefix1(strs1)
+
+"""
+example output:
+
+2019-8-25 0:26:0]: [11.9740ms]longestCommonPrefix -> fl
+[2019-8-25 0:26:0]: [6.9880ms]longestCommonPrefix1 -> fl
+[2019-8-25 0:26:0]: [3.0660ms]longestCommonPrefix1 -> a
+"""
