@@ -10,10 +10,9 @@ from schema import time_it
 class Solution:
     @time_it
     def reverse(self, x):
-        """
-        :type x: int
-        :rtype: int
-        """
+        '''
+        result = result*10 + x%10
+        '''
         # if x is negative, change x to positive and let flag = -1
         flag = 1
         if x == 0:
@@ -47,3 +46,10 @@ r1 = solu.reverse(case1)
 assert r1 == 321
 r2 = solu.reverse(case2)
 assert r2 == -321
+
+
+"""
+example output:
+[2019-8-25 0:13:37]: [3.4080ms]reverse -> 321
+[2019-8-25 0:13:37]: [2.6430ms]reverse -> -321
+"""
