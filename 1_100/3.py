@@ -9,6 +9,7 @@ from schema import time_it
 
 
 class Solution:
+    @classmethod
     @time_it
     def lengthOfLongestSubstring(self, s: str) -> int:
         if len(s) <= 1:
@@ -26,9 +27,16 @@ class Solution:
                 length = max(length, right-left)
         return length
 
-solu = Solution()
+
 case1 = 'abcabcbb'
-assert solu.lengthOfLongestSubstring(case1) == 3
+assert Solution.lengthOfLongestSubstring(case1) == 3
 
 case2 = 'pwwkew'
-assert solu.lengthOfLongestSubstring(case2) == 3
+assert Solution.lengthOfLongestSubstring(case2) == 3
+
+
+"""
+example output:
+[2019-8-25 0:7:35]: [13.7410ms]lengthOfLongestSubstring -> 3
+[2019-8-25 0:7:35]: [11.8850ms]lengthOfLongestSubstring -> 3
+"""
