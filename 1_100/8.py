@@ -19,6 +19,7 @@ class Solution:
         INT_MIN = - (2 ** 31)
         INT_MAX = 2 ** 31 - 1
 
+        # Find first number
         for i in range(len(s)):
             if s[i] == ' ':
                 continue
@@ -39,6 +40,7 @@ class Solution:
             else:
                 break
 
+        # calculate
         while i < len(s) and s[i].isdigit():
             result = result * 10 + int(s[i])
             if flag > 0 and result > INT_MAX:
@@ -63,3 +65,12 @@ assert r3 == 0
 case4 = "-91283472332"
 r4 = Solution.myAtoi(case4)
 assert r4 == -2147483648
+
+
+"""
+example output:
+[2019-8-25 0:16:4]: [37.1000ms]myAtoi -> -42
+[2019-8-25 0:16:4]: [14.5810ms]myAtoi -> 4193
+[2019-8-25 0:16:4]: [5.0960ms]myAtoi -> 0
+[2019-8-25 0:16:4]: [25.7110ms]myAtoi -> -2147483648
+"""
