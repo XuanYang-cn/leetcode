@@ -1,8 +1,17 @@
+# 1 two sum 两数之和
+
+__author__ = "Yang Xuan (jumpthepig@gmail.com)"
+
+import sys
+sys.path.append('.')
+from schema import time_it
+
+
+@time_it
 def twoSum(nums, target):
     """
-    :type nums: List[int]
-    :type target: int
-    :rtype: List[int]
+    Space: O(N)
+    Average Time: O(N/2)
     """
     # Change list into dictionary.
     # dictionary_keys are values of list nums
@@ -20,4 +29,10 @@ def twoSum(nums, target):
 nums = [2, 7, 11, 15]
 target = 9
 a = twoSum(nums, target)
-print(a)
+assert a == [0, 1]
+
+
+"""
+example output:
+[2019-8-24 23:55:38]: [3.9910ms]twoSum -> [0, 1]
+"""
