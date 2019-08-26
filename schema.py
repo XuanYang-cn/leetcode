@@ -25,6 +25,9 @@ class Node:
         self.val = x
         self.next = None
 
+    def __repr__(self):
+        return f"{self.val} -> {self.next}"
+
 
 class Linkedlist:
     def __init__(self, array=None):
@@ -38,12 +41,13 @@ class Linkedlist:
         return self.size
 
     def __repr__(self):
-        head = self.head
-        result = ''
-        while head:
-            result += str(head.val) + ' -'
-            head = head.next
-        return result
+        return f"<Linkedlist>: {self.head}"
+        #  head = self.head
+        #  result = ''
+        #  while head:
+        #      result += str(head.val) + ' -'
+        #      head = head.next
+        #  return result
 
     def create_by_list(self, array):
         temp = self.head
