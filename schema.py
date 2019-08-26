@@ -27,9 +27,12 @@ class Node:
 
 
 class Linkedlist:
-    def __init__(self):
+    def __init__(self, array=None):
         self.head = None
         self.size = 0
+
+        if array:
+            self.create_by_list(array)
 
     def __len__(self):
         return self.size

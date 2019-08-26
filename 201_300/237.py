@@ -1,0 +1,34 @@
+# 237 delete node in a linkedlist 删除链表中的节点
+
+__author__ = "Yang Xuan (jumpthepig@gmail.com)"
+
+
+import sys
+sys.path.append('.')
+from schema import Linkedlist, time_it
+
+
+# Definition for singly-linked list.
+# class ListNode:
+#     def __init__(self, x):
+#         self.val = x
+#         self.next = None
+
+class Solution:
+    @classmethod
+    def deleteNode(self, node):
+        '''
+        因为无法得知链表之前的结点，修改链表的值
+        '''
+        while node.next:
+            prev = node
+            node.val = node.next.val
+            node = node.next
+        prev.next = None
+
+
+l1 = Linkedlist([1, 2, 3, 4])
+print(l1)
+case1 = l1.head.next.next
+Solution.deleteNode(case1)
+print(l1)
