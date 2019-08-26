@@ -1,14 +1,15 @@
 # leetcode_answers_python
 Codes and Answers of Leetcode Problems in Python
 
-|\#|Method|Code|Difficulty|
-|:--|:-----|:-----:|:----------:|
+|\#|Method|Code|Difficulty|Recommend|
+|:--|:-----|:-----:|:----------:|:----:|
 |1|[Two Sum 两数之和](https://leetcode-cn.com/problems/two-sum/)|[python](/1_100/1.py)|Easy|
 |3|[Longest Substring Without Repeating Characters 无重复字符的最长子串](https://leetcode-cn.com/problems/longest-substring-without-repeating-characters/)|[python](/1_100/3.py)|Medium|
 |7|[Reverse Integer 整数反转](https://leetcode-cn.com/problems/reverse-integer/)|[python](/1_100/7.py)|Easy|
 |8|[String to integer 字符串转换整数（atoi）](https://leetcode-cn.com/problems/string-to-integer-atoi/)|[python](/1_100/8.py)|Medium|
 |14|[Longest common prefix 最长公共前缀](https://leetcode-cn.com/problems/longest-common-prefix/)|[python](/1_100/14.py)|Easy|
 |28|[Implement strstr 实现strStr()](https://leetcode-cn.com/problems/implement-strstr/)|[python](/1_100/28.py)|Easy|
+|38|[Count and Say 报数](https://leetcode-cn.com/problems/count-and-say/)|[python](/1_100/38.py)|Easy|5|
 |48|[Rotate image](/1_100/48.md)|[python](/1_100/48.py)|Medium|
 |122|[Best Time to Buy and Sell Stock II 买卖股票的最佳时期2](/101_200/122_best_time_to_buy_and_sell_stock.md)|[python](/101_200/122.py)|Easy|
 |344|[Reverse String 反转字符串]()|[python](/301_400/344.py)|Easy|
