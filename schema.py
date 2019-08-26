@@ -67,3 +67,15 @@ class Linkedlist:
         else:
             head.next = Node(x)
         self.size += 1
+
+    def reverse(self):
+
+        prev = None
+        head = self.head
+        while head:
+            temp = head.next
+            head.next = prev
+
+            prev = head
+            head = temp
+        self.head = prev
