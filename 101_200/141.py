@@ -10,25 +10,6 @@ from schema import Node as ListNode
 
 
 class Solution(object):
-    def hasCycle(self, head):
-        """
-        :type head: ListNode
-        :rtype: bool
-        """
-        if not head or not head.next:
-            return False
-
-        faster = head.next
-        slower = head
-
-        while faster and faster.next:
-            if faster is slower:  # If cycle, faster and slower will eventually meet
-                return True
-            faster = faster.next.next  # Moves 2 step a time
-            slower = slower.next  # Moves 1 step a time
-
-        return False
-
     @classmethod
     @time_it
     def two_pointers(self, head: ListNode):
