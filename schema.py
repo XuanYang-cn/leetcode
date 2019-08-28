@@ -42,12 +42,6 @@ class Linkedlist:
 
     def __repr__(self):
         return f"<Linkedlist>: {self.head}"
-        #  head = self.head
-        #  result = ''
-        #  while head:
-        #      result += str(head.val) + ' -'
-        #      head = head.next
-        #  return result
 
     def create_by_list(self, array):
         temp = self.head
@@ -79,3 +73,14 @@ class Linkedlist:
             prev = head
             head = temp
         self.head = prev
+
+    def get_node(self, index):
+        if index >= self.size:
+            raise ValueError('Index out of range')
+
+        last = self.head
+        while index > 0:
+            last = last.next
+            index -= 1
+
+        return last
