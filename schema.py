@@ -3,6 +3,7 @@
 
 from functools import wraps
 import time
+import queue
 
 
 def time_it(func):
@@ -84,3 +85,58 @@ class Linkedlist:
             index -= 1
 
         return last
+
+
+class TreeNode:
+    def __init__(self, x):
+        self.val = x
+        self.left = None
+        self.right = None
+
+
+class BinaryTree:
+    def __init__(self, array=None):
+        self.root = None
+
+        if array:
+            self.create_by_list(array)
+
+    def create_by_list(self, array):
+        self.root = self._create(array, 0)
+        pass
+
+    def _create(self, array, index):
+        if index >= len(array):
+            return None
+
+        if array[index] is None:
+            return None
+
+        node = TreeNode(array[index])
+        node.left = self._create(array, 2*index + 1)
+        node.right = self._create(array, 2*index + 2)
+
+        return node
+
+    def breadth_traversal(self):
+        q = queue.Queue()
+        q.put(self.root)
+
+        while not q.empty():
+            node = q.get()
+            if node:
+                if node.left:
+                    q.put(node.left)
+                if node.right:
+                    q.put(node.right)
+                print(node.val)
+
+    def depth_traversal(self):
+        self._depth_traversal(self.root)
+
+    def _depth_traversal(self, root):
+        if not root:
+            return
+        print(root.val)
+        self._depth_traversal(root.left)
+        self._depth_traversal(root.right)
