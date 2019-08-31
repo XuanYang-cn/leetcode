@@ -12,6 +12,7 @@ Codes and Answers of Leetcode Problems in Python
 |21|[Merge two sorted lists 合并两个有序链表](https://leetcode-cn.com/problems/merge-two-sorted-lists/)|[python](/1_100/21.py)|Easy||
 |28|[Implement strstr 实现strStr()](https://leetcode-cn.com/problems/implement-strstr/)|[python](/1_100/28.py)|Easy||
 |38|[Count and Say 报数](https://leetcode-cn.com/problems/count-and-say/)|[python](/1_100/38.py)|Easy|5|
+|98|[Validate Binary Search Tree 验证有效的二叉搜索树](https://leetcode-cn.com/problems/validate-binary-search-tree/)|[python](/1_100/98.py)|Medium|5|
 |141|[Linked list cycle 环形链表](https://leetcode-cn.com/problems/linked-list-cycle/)|[python](/1_100/141.py)|Easy|1|
 |206|[Reverse linkedlist 反转链表](https://leetcode-cn.com/problems/reverse-linked-list/)|[python](/201/300/206.py)|Easy|1|
 |234|[Palindrome linked list 回文链表](https://leetcode-cn.com/problems/palindrome-linked-list/)|[python](/201/300/234.py)|Easy|1|
