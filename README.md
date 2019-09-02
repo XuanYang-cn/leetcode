@@ -18,7 +18,8 @@ Codes and Answers of Leetcode Problems in Python
 |141|[Linked list cycle 环形链表](https://leetcode-cn.com/problems/linked-list-cycle/)|[python](/1_100/141.py)|Easy|1|
 |206|[Reverse linkedlist 反转链表](https://leetcode-cn.com/problems/reverse-linked-list/)|[python](/201/300/206.py)|Easy|1|
 |234|[Palindrome linked list 回文链表](https://leetcode-cn.com/problems/palindrome-linked-list/)|[python](/201/300/234.py)|Easy|1|
-|237|[Delete a node in a Linkedlist 删除链表中的结点](https://leetcode-cn.com/problems/delete-node-in-a-linked-list/)|[python](/201/300/237.py)|Easy|0|
+|237|[Delete a node in a Linkedlist 删除链表中的结点（题目本身很好，题意描述太不清晰）](https://leetcode-cn.com/problems/delete-node-in-a-linked-list/)|[python](/201/300/237.py)|Easy|0|
+|278|[First Bad Version 第一个错误的版本(二分搜索的变种)](https://leetcode-cn.com/problems/first-bad-version/)|[python](/201_300/278.py)|Easy|3|
 
 
 	Using helper decorator @time_it to see performance directly 
