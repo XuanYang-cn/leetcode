@@ -1,0 +1,44 @@
+# 88 Merge sorted array 合并有序数组
+
+__author__ = 'Yang Xuan (jumpthepig@gmail.com)'
+
+
+import sys
+sys.path.append('.')
+from schema import time_it
+
+
+class Solution:
+    @classmethod
+    @time_it
+    def merge(self, nums1, m: int, nums2, n: int) -> None:
+        """
+        Do not return anything, modify nums1 in-place instead.
+        """
+
+        index1 = m - 1
+        index2 = n - 1
+        current = m + n - 1
+
+        while current >= 0:
+            if index1 >= 0 and index2 >= 0:
+                if nums1[index1] >= nums2[index2]:
+                    nums1[current] = nums1[index1]
+                    current -= 1
+                    index1 -= 1
+                else:
+                    nums1[current] = nums2[index2]
+                    current -= 1
+                    index2 -= 1
+            elif index1 >= 0:
+                break
+            elif index2 >= 0:
+                nums1[current] = nums2[index2]
+                current -= 1
+                index2 -= 1
+        return
+
+
+case1 = ([1, 2, 3, 0, 0, 0], 3, [2, 5, 6], 3)
+Solution.merge(*case1)
+assert case1[0] == [1, 2, 2, 3, 5, 6]
