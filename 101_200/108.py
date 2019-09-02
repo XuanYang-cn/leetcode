@@ -1,0 +1,39 @@
+# 108 Convert sorted array to binary search tree 将有序数组转化为二叉搜索树
+
+__author__ = 'Yang Xuan (jumpthepig@gmail.com)'
+
+
+import sys
+sys.path.append('.')
+from schema import time_it, TreeNode, BinaryTree
+
+# Definition for a binary tree node.
+# class TreeNode:
+#     def __init__(self, x):
+#         self.val = x
+#         self.left = None
+#         self.right = None
+
+
+class Solution:
+    @classmethod
+    @time_it
+    def sortedArrayToBST(self, nums) -> TreeNode:
+        '''
+        递归： 通过中序遍历还原二叉树， 根节点选择数组的中点
+        '''
+        if not nums or len(nums) <= 0:
+            return None
+
+        return self._recursivly(nums, 0, len(nums) - 1)
+
+    @classmethod
+    def _recursivly(self, nums, left, right):
+        if left > right:
+            return
+
+        middle = (left + right) // 2
+        node = TreeNode(nums[middle])
+        node.left = self._recursivly(nums, left, middle-1)
+        node.right = self._recursivly(nums, middle + 1, right)
+        return node
