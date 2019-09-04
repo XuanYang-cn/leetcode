@@ -73,3 +73,11 @@ class Two:
 
 assert Two.maxProfit(case1) == 7
 assert Two.maxProfit(case2) == 0
+
+
+class Three:
+    """
+    123. Best Time To Buy And Sell A Stock III 买卖股票的最佳时机3
+    Difficulty: Hard
+    Description: 最多能完成2笔交易，但是必须在购买前出售掉之前的股票
+    """

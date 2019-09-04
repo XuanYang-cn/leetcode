@@ -19,7 +19,7 @@ $C^1_{n} + C^2_{n-1} + ... + C^n_n$
 subarrays for *nums[n]*.
 Calculate all subarrays' sums and return the max
 
-Time complexity: $O(n^2)$
+Time complexity: $O(N^2)$
 
 No code ;)
 
@@ -109,15 +109,13 @@ class Solution:
 
 ### Method 3: Dynamic Programming
 
-If function *F(i)* means the max sub-array with *i* ended, *F(i)* can be written as:
+Status: $DP[i]$ means the max sum with $nums[i]$ ended
 
-$F(i) =  Max(F(i-1) + nums[i], nums[i])$
+State transition equation: $DP[i] =  max(DP[i-1] + nums[i], nums[i])$
 
-$maxSubArray$ is required:
+$max\_sum = max(DP[i], max\_sum)$
 
-$maxSubArray = Max(F(i), maxSubArray)$
-
-Time Complexity: $O(n)$
+Time Complexity: $O(N)$
 
 **Note:** hard to comprehend
 
@@ -131,9 +129,9 @@ def maxSubArray(self, nums):
     """
     # Using Dynamic Programming
     maxSubArrayEndsWithI = nums[0]
-    maxSubArray = maxSubArrayEndsWithI
+    max_sum = maxSubArrayEndsWithI
     for i in range(1, len(nums)):
         maxSubArrayEndsWithI = max(maxSubArrayEndsWithI + nums[i], nums[i])
-        maxSubArray = max(maxSubArrayEndsWithI, maxSubArray)
-        return maxSubArray
+        max_sum = max(maxSubArrayEndsWithI, max_sum)
+    return max_sum
 ```
