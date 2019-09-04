@@ -12,6 +12,7 @@ Codes and Answers of Leetcode Problems in Python
 |21|[Merge two sorted lists 合并两个有序链表](https://leetcode-cn.com/problems/merge-two-sorted-lists/)|[python](/1_100/21.py)|Easy||
 |28|[Implement strstr 实现strStr()](https://leetcode-cn.com/problems/implement-strstr/)|[python](/1_100/28.py)|Easy||
 |38|[Count and Say 报数](https://leetcode-cn.com/problems/count-and-say/)|[python](/1_100/38.py)|Easy|5|
+|53|[Maximum Subarray 最大子序和(DP、DC)](https://leetcode-cn.com/problems/maximum-subarray/)|[solution & python](/1_100/53_maximum_subarray.md)|Easy|5|
 |88|[Merge Sorted array 合并两个有序数组](https://leetcode-cn.com/problems/merge-sorted-array/)|[python](/1_100/88.py)|Easy|2|
 |98|[Validate Binary Search Tree 验证有效的二叉搜索树](https://leetcode-cn.com/problems/validate-binary-search-tree/)|[python](/1_100/98.py)|Medium|5|
 |108|[Convert sorted array to binary search tree 将有序数组转化为二叉搜索树](https://leetcode-cn.com/problems/convert-sorted-array-to-binary-search-tree/)|[python](/101_200/108.py)|Easy|1|
