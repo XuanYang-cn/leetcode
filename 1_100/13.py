@@ -1,0 +1,84 @@
+# 13 Roman to Integer   罗马数字转整数
+
+__author__ = 'Yang Xuan (jumpthepig@gmail.com)'
+
+
+import sys
+sys.path.append('.')
+from schema import time_it
+
+
+class Solution:
+    @classmethod
+    @time_it
+    def romanToInt(self, s: str) -> int:
+        single = {
+            'I': 1,
+            'V': 5,
+            'X': 10,
+            'L': 50,
+            'C': 100,
+            'D': 500,
+            'M': 1000
+        }
+        double = {
+            'IV': 4,
+            'IX': 9,
+            'XL': 40,
+            'XC': 90,
+            'CD': 400,
+            'CM': 900
+        }
+        i = 0
+        result = 0
+        while i < len(s):
+            if s[i] in "IXC":
+                if i < len(s) - 1 and s[i: i + 2] in double:
+                    result += double.get(s[i: i+2])
+                    i += 2
+                else:
+                    result += single.get(s[i])
+                    i += 1
+            else:
+                result += single.get(s[i])
+                i += 1
+        return result
+
+    @classmethod
+    @time_it
+    def non_redun(self, s):
+        '''
+        只需要存储单个字符的值
+        '''
+
+        single = {
+            'I': 1,
+            'V': 5,
+            'X': 10,
+            'L': 50,
+            'C': 100,
+            'D': 500,
+            'M': 1000
+        }
+        result = 0
+
+        for i in range(len(s)):
+            if i == len(s) - 1:
+                result += single.get(s[i])
+
+            elif single.get(s[i+1]) <= single.get(s[i]):
+                result += single[s[i]]
+            else:
+                result -= single[s[i]]
+        return result
+
+
+case1 = "III"
+case2 = "LVIII"
+case3 = "MCMXCIV"
+assert Solution.romanToInt(case1) == 3
+assert Solution.romanToInt(case2) == 58
+assert Solution.romanToInt(case3) == 1994
+assert Solution.non_redun(case1) == 3
+assert Solution.non_redun(case2) == 58
+assert Solution.non_redun(case3) == 1994

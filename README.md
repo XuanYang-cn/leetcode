@@ -7,6 +7,7 @@ Codes and Answers of Leetcode Problems in Python
 |3|[Longest Substring Without Repeating Characters 无重复字符的最长子串](https://leetcode-cn.com/problems/longest-substring-without-repeating-characters/)|[python](/1_100/3.py)|Medium||
 |7|[Reverse Integer 整数反转](https://leetcode-cn.com/problems/reverse-integer/)|[python](/1_100/7.py)|Easy||
 |8|[String to integer 字符串转换整数（atoi）](https://leetcode-cn.com/problems/string-to-integer-atoi/)|[python](/1_100/8.py)|Medium||
+|13|[Roman to Integer 罗马数字转整数](https://leetcode-cn.com/problems/roman-to-integer/)|[python](/1_100/13.py)|Easy|3|
 |14|[Longest common prefix 最长公共前缀](https://leetcode-cn.com/problems/longest-common-prefix/)|[python](/1_100/14.py)|Easy||
 |19|[Remove Nth node from end of linkedlist 删除链表的倒数第n个节点](https://leetcode-cn.com/problems/remove-nth-node-from-end-of-list/)|[python](/1_100/19.py)|Medium|5|
 |21|[Merge two sorted lists 合并两个有序链表](https://leetcode-cn.com/problems/merge-two-sorted-lists/)|[python](/1_100/21.py)|Easy||
