@@ -26,6 +26,13 @@ Codes and Answers of Leetcode Problems in Python
 |384|[Shuffle an Array 打乱数组](https://leetcode-cn.com/problems/shuffle-an-array/)|[python](/301_400/384.py)|Medium|3|
 
 
+#### Hamming Distance series 求汉明距离系列
+|\#|Mehod|Code|Difficulty|
+|:---:|:-----|:-----:|:----------:|
+|191|[Number of 1 bits 位1的个数](https://leetcode-cn.com/problems/number-of-1-bits/)|[python](/101_200/191.py)|Easy|
+|461|[Hamming Distance 汉明距离](https://leetcode-cn.com/problems/hamming-distance/)|[python](/401_500/461.py)|Easy|
+|477|[Total Hamming Distance 汉明距离总和](https://leetcode-cn.com/problems/total-hamming-distance/)|[python](/401_500/477.py)|Medium|
+
 	Using helper decorator @time_it to see performance directly 
 
 	使用装饰器 @time_it 来直观对比多种方法的时间性能
