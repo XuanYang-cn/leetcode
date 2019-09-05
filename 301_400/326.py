@@ -35,7 +35,7 @@ class Solution:
         '''
         Time: UNKNOWN
         '''
-        return (math.log10(n) / math.log10(3)) % 1 == 0
+        return n > 0 and (math.log10(n) / math.log10(3)) % 1 == 0
 
 
 case0 = 3
