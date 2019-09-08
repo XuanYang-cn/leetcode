@@ -11,6 +11,7 @@ Codes and Answers of Leetcode Problems in Python
 |14|[Longest common prefix 最长公共前缀](https://leetcode-cn.com/problems/longest-common-prefix/)|[python](/1_100/14.py)|Easy||
 |19|[Remove Nth node from end of linkedlist 删除链表的倒数第n个节点](https://leetcode-cn.com/problems/remove-nth-node-from-end-of-list/)|[python](/1_100/19.py)|Medium|5|
 |21|[Merge two sorted lists 合并两个有序链表](https://leetcode-cn.com/problems/merge-two-sorted-lists/)|[python](/1_100/21.py)|Easy||
+|23|[Merge K sorted array 合并K个有序链表](https://leetcode-cn.com/problems/merge-k-sorted-lists/)|[python](/1_100/23.py)|Hard|5|
 |28|[Implement strstr 实现strStr()](https://leetcode-cn.com/problems/implement-strstr/)|[python](/1_100/28.py)|Easy||
 |38|[Count and Say 报数](https://leetcode-cn.com/problems/count-and-say/)|[python](/1_100/38.py)|Easy|5|
 |53|[Maximum Subarray 最大子序和(DP、DC)](https://leetcode-cn.com/problems/maximum-subarray/)|[solution & python](/1_100/53_maximum_subarray.md)|Easy|5|
