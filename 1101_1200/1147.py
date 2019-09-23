@@ -1,0 +1,21 @@
+# 1147 longest chunked palindrome decomposition 段式回文
+
+__author__ = 'Yang Xuan (jumpthempig@gmail.com)'
+
+
+class Solution:
+    @classmethod
+    def longestDecomposition(self, text: str) -> int:
+        """
+        Ref: https://leetcode.com/problems/longest-chunked-palindrome-decomposition/discuss/350560/JavaC++Python-Easy-Greedy-with-Prove/?utm_source=LCUS&utm_medium=ip_redirect_q_uns&utm_campaign=transfer2china
+        """
+        k, left, right = 0, "", ""
+        for char_forward, char_backward in zip(text, text[::-1]):
+            left, right = left + char_forward,  char_backward + right
+            if left == right:
+                k, left, right = k+1, "", ""
+        return k
+
+
+case1 = "ghiabcdefhelloadamhelloabcdefghi"
+assert Solution.longestDecomposition(case1) == 7
