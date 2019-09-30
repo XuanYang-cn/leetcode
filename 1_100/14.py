@@ -58,6 +58,16 @@ class Solution:
                     return strs[0][:i]
         return strs[0]
 
+    def longestCommonPrefix2(cls, strs: list) -> str:
+        if len(strs) <= 0:
+            return ""
+        base = strs[0]
+        for i in range(len(base)):
+            for j in range(1, len(strs)):
+                if not strs[j].startswith(base[:i + 1]):
+                    return base[:i]
+        return base
+
 
 strs = ["flower", "flow", "flight"]
 strs1 = ['a', 'a']
