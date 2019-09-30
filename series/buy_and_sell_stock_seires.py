@@ -4,10 +4,6 @@ Best Time To Buy And Sell Stock Series
 
 __author__ = 'Yang Xuan (jumpthepig@gmail.com)'
 
-import sys
-sys.path.append('.')
-from schema import time_it
-
 
 class Solution:
     """
@@ -17,7 +13,6 @@ class Solution:
     """
 
     @classmethod
-    @time_it
     def brute_force(self, prices: list) -> int:
         '''brute force
         Time: O(N^2)
@@ -30,7 +25,6 @@ class Solution:
         return max_profit
 
     @classmethod
-    @time_it
     def one_traversal(self, prices: list) -> int:
         '''find valley and peek
         Time: O(N)
@@ -46,7 +40,6 @@ class Solution:
         return max_profit
 
     @classmethod
-    @time_it
     def dynamic_programming(self, prices):
         if len(prices) == 0:
             return 0
@@ -78,7 +71,6 @@ class Two:
     """
 
     @classmethod
-    @time_it
     def maxProfit(self, prices) -> int:
         max_profit = 0
         for i in range(len(prices) - 1):
@@ -88,7 +80,6 @@ class Two:
         return max_profit
 
     @classmethod
-    @time_it
     def Dynamic_programming(self, prices):
         n = len(prices)
         if n == 0:
@@ -119,14 +110,14 @@ class Three:
         if n == 0:
             return 0
         dp = [[[0 for _ in range(2)] for _ in range(max_k+1)] for _ in range(n)]
-        
+
         for i in range(n):
             for k in range(max_k, 0, -1):
                 if i == 0:
                     dp[i][k][0] = 0
                     dp[i][k][1] = -prices[i]
                     continue
-                    
+
                 dp[i][k][0] = max(dp[i-1][k][0], dp[i-1][k][1] + prices[i])
                 dp[i][k][1] = max(dp[i-1][k][1], dp[i-1][k-1][0]-prices[i])
         return dp[n-1][max_k][0]
@@ -143,7 +134,7 @@ class Four:
             return 0
         if max_k > n//2:
             return self.max_profit_infi_k(prices)
-            
+
         dp = [[[0 for _ in range(2)] for _ in range(max_k + 1)] for _ in range(n)]
         for i in range(n):
             for k in range(max_k, 0, -1):
@@ -154,7 +145,7 @@ class Four:
                 dp[i][k][0] = max(dp[i-1][k][0], dp[i-1][k][1]+prices[i])
                 dp[i][k][1] = max(dp[i-1][k][1], dp[i-1][k-1][0]-prices[i])
         return dp[n-1][max_k][0]
-        
+
     def max_profit_infi_k(self, prices):
         n = len(prices)
         for i in range(n):
