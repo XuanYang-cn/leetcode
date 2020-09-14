@@ -39,3 +39,49 @@ def twoSum(nums, target):
 args = ([2, 7, 11, 15], 9)
 assert twoSum(*args) == [0, 1]
 ```
+
+```c++
+vector<int> twoSum(vector<int>& nums, int target) {
+    std::map<int,int> dictionary;
+    std::vector<int> result;
+    for (int i = 0; i < nums.size(); ++i) {
+        dictionary[nums[i]] = i;
+    }
+    
+    for (int j = 0; j < nums.size(); ++j){
+        int tmp = target - nums[j];
+        std::map<int, int>::iterator tmp_ptr = dictionary.find(tmp);
+        if (tmp_ptr != dictionary.end() && tmp_ptr->second != j) {
+            result.push_back(j);
+            result.push_back(tmp_ptr->second);
+            break;
+        }
+    }
+    return result;
+}
+```
+
+
+
+### 解法2 暴力法
+
+时间复杂度 $O(N^2)$
+
+```c++
+vector<int> twoSum(vector<int>& nums, int target) {
+    vector<int> result;
+    for (int i = 0; i < nums.size(); ++i) {
+        for (int j = i + 1; j < nums.size(); ++j) {
+            if ( nums[i] + nums[j] == target ) {
+                result.push_back(i);
+                result.push_back(j);
+                return result;
+            }
+        }
+    }
+    return result;
+}
+```
+
+
+

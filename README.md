@@ -3,7 +3,7 @@ Codes and Answers of Leetcode Problems in Python
 
 |\#|Method|Code Lang|Difficulty|Recommend|
 |:---:|:-----|:-----:|:----------:|:----:|
-|1|Two Sum [两数之和](/1_100/1_ZH.md)|python|Easy||
+|1|Two Sum [两数之和](/1_100/1_ZH.md)|python/cpp|Easy|0|
 |3|[Longest Substring Without Repeating Characters 无重复字符的最长子串](https://leetcode-cn.com/problems/longest-substring-without-repeating-characters/)|[python](/1_100/3.py)|Medium||
 |7|[Reverse Integer 整数反转](https://leetcode-cn.com/problems/reverse-integer/)|[python](/1_100/7.py)|Easy||
 |8|[String to integer 字符串转换整数（atoi）](https://leetcode-cn.com/problems/string-to-integer-atoi/)|[python](/1_100/8.py)|Medium||
